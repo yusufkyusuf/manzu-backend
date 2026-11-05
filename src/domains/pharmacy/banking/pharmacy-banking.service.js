@@ -281,8 +281,8 @@ async function getBankingStatus(pharmacyId) {
   return {
     hasSetup,
     bankName: pharmacy.bankName || null,
-    accountNumber: pharmacy.accountNumber ? 
-      `****${pharmacy.accountNumber.slice(-4)}` : null,
+    accountNumber: pharmacy.bankAccountNumber ? 
+      `****${pharmacy.bankAccountNumber.slice(-4)}` : null,
     accountName: pharmacy.accountName || null,
   };
 }
